@@ -1,61 +1,22 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-    line-height: 1;
-    font-family: sans-serif;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 .wrapper {
     display: block;
-    margin: 0 auto;
+    margin: 5px auto;
     width: 100%;
     max-width: 1280px;
+    clear: both;
 }
 .mouse {
     position:absolute;
-    bottom:90px;
+    bottom:25vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 20px;
-    height: 60px;
-    background: white;
     z-index:1;
-    animation: mouseHero infinite 2s;
+    animation: mouseHero infinite 1s;
+}
+.container {
+    margin: 40px auto;
+    background: white;
+    border-radius: 5px;
 }
 /*END RESET*/
 /*NAVIGATION*/
@@ -71,6 +32,16 @@ header {
     width: 100%;
     position: fixed;
     padding-top: 60px;
+    z-index: 10;
+    transition: 0.3s;
+}
+.newNav {
+    display: block;
+    width: 100%;
+    position: fixed;
+    transition: 0.3s;
+    background: #333333;
+    padding-top: 0px;
     z-index: 10;
 }
 div.logo img {
@@ -88,8 +59,7 @@ ul.navBar li{
 }
 ul.navBar li a {
     text-decoration: none;
-    color:white;
-    font-size: 22px;
+    color:#ececec;
 }
 .hamburger {
 
@@ -137,7 +107,7 @@ ul.navBar li.linkedin {
 /*HERO*/
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: block;
     margin: 0 auto;
 }
@@ -153,39 +123,69 @@ ul.navBar li.linkedin {
 /*ABOUT*/
 .about {
     position: relative;
-    display: flex;
-    height: 100vh;
-    background: #ececec
+    display: block;
+    background: #ececec;
+    padding: 2px 0;
 }
-.aboutMe {
-    transform: translateY(30%);
-    width: 100%;    
-    padding: 60px 0 60px 60%;
-
-}
-.aboutMe h3 {
-    font-size: 2em;
-    margin-bottom: 50px;
+.image img {
+    width: 250px;
+    transform: translateY(-70%);
+    border: 10px solid #ececec;
 }
 .image {
-    position: absolute;
-    top:0px;
-    left:0px;
-    width: 50%;
-    height: 100%;
-    background-image: url(../img/Nicola-853x1024.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 90px;
+}
+.name {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px 0 0 8px;
+    line-height: 1.3;
+    color: #333333;
+}
+.location {
+    color: #858585;
+}
+.aboutMe {
+    width: 100%;
+    padding: 25px;
+    line-height: 1.5;
+    font-weight: 800;
+}
+.aboutMe ul {
+    float: right;
+    margin:10px 0;
+}
+.aboutMe h2 {
+    font-size: 2em;
+    margin: 0px 0 10px 0;
+    color: #858585;
+}
+.aboutMe p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #333333;
+}
+.aboutMe ul li {
+    list-style: initial;
+    font-size: 1.3em;
+    list-style: none;
+    color: #333333;
 }
 /*END ABOUT*/
 /*WORKS*/
 .portfolio {
-    height: 100vh;
-    background:#ececec;
+    position: relative;
+    display: block;
+    background: #ececec;
+    padding: 30px 0;
 }
-.mockup img {
-    max-width:100%;
+.box {
+    margin: 0 5px;
+}
+.box img {
+    max-width: 100%;
 }
 /*END WORKS*/
 /*CONTACT*/
