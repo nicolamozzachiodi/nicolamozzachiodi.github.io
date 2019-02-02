@@ -1,0 +1,213 @@
+.wrapper {
+    display: block;
+    margin: 5px auto;
+    width: 100%;
+    max-width: 1280px;
+    clear: both;
+}
+.mouse {
+    position:absolute;
+    bottom:25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:1;
+    animation: mouseHero infinite 1s;
+}
+.container {
+    margin: 40px auto;
+    background: white;
+    border-radius: 5px;
+}
+/*END RESET*/
+/*NAVIGATION*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    font-weight: 600;
+}
+.navigation {
+    display: block;
+    width: 100%;
+    position: fixed;
+    padding-top: 60px;
+    z-index: 10;
+    transition: 0.3s;
+}
+.newNav {
+    display: block;
+    width: 100%;
+    position: fixed;
+    transition: 0.3s;
+    background: #333333;
+    padding-top: 0px;
+    z-index: 10;
+}
+div.logo img {
+    max-width: 80px;
+}
+.navBar {
+    line-height: 80px;
+    height: 50px;
+    margin-right: -35px;
+}
+ul.navBar li{
+    display: inline;
+    line-height: 50px;
+    margin-left:35px;
+}
+ul.navBar li a {
+    text-decoration: none;
+    color:#ececec;
+}
+.hamburger {
+
+}
+.ham {
+
+}
+.navBar-mobile {
+
+}
+.navBar-mobile-div {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    transform: translateX(100%);
+}
+.is-open {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
+}
+ul.navBar li.linkedin {
+    margin-left: 65px;
+}
+.linkedin a {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+.linkedin a:hover {
+    color: #333333;
+    background: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+/*END NAVIGATION*/
+/*HERO*/
+.hero {
+    width: 100%;
+    height: 80vh;
+    display: block;
+    margin: 0 auto;
+}
+.hero .slider {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/*END HERO*/
+/*ABOUT*/
+.about {
+    position: relative;
+    display: block;
+    background: #ececec;
+    padding: 2px 0;
+}
+.image img {
+    width: 250px;
+    transform: translateY(-70%);
+    border: 10px solid #ececec;
+}
+.image {
+    height: 90px;
+}
+.name {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px 0 0 8px;
+    line-height: 1.3;
+    color: #333333;
+}
+.location {
+    color: #858585;
+}
+.aboutMe {
+    width: 100%;
+    padding: 25px;
+    line-height: 1.5;
+    font-weight: 800;
+}
+.aboutMe ul {
+    float: right;
+    margin:10px 0;
+}
+.aboutMe h2 {
+    font-size: 2em;
+    margin: 0px 0 10px 0;
+    color: #858585;
+}
+.aboutMe p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: #333333;
+}
+.aboutMe ul li {
+    list-style: initial;
+    font-size: 1.3em;
+    list-style: none;
+    color: #333333;
+}
+/*END ABOUT*/
+/*WORKS*/
+.portfolio {
+    position: relative;
+    display: block;
+    background: #ececec;
+    padding: 30px 0;
+}
+.box {
+    margin: 0 5px;
+}
+.box img {
+    max-width: 100%;
+}
+/*END WORKS*/
+/*CONTACT*/
+.contact {
+    height: calc(100vh - 80px);
+}
+.footerText {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+/*END CONTACT*/
+
+@keyframes mouseHero {
+    0% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-20%);
+    }
+}
