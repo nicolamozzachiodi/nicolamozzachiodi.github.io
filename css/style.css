@@ -1,3 +1,13 @@
+:root {
+    --lightGray: #ececec; 
+    --darkGray: #333333;
+    --subtitle: #959eaf;
+}
+body,html {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
 .wrapper {
     display: block;
     margin: 5px auto;
@@ -40,7 +50,7 @@ header {
     width: 100%;
     position: fixed;
     transition: 0.3s;
-    background: #333333;
+    background: var(--darkGray);
     padding-top: 0px;
     z-index: 10;
 }
@@ -59,13 +69,22 @@ ul.navBar li{
 }
 ul.navBar li a {
     text-decoration: none;
-    color:#ececec;
+    color: var(--lightGray);
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 .hamburger {
-
+    display: block;
+    width: 40px;
+    padding: 25px;
+    height: 40px;
 }
 .ham {
-
+    width: 30px;
+    height: 3px;
+    background: var(--lightGray);;
+    display: block;
+    margin: 5px;
 }
 .navBar-mobile {
 
@@ -97,7 +116,7 @@ ul.navBar li.linkedin {
     padding: 10px 15px;
 }
 .linkedin a:hover {
-    color: #333333;
+    color: var(--darkGray);
     background: white;
     border: 1px solid white;
     border-radius: 3px;
@@ -111,7 +130,7 @@ ul.navBar li.linkedin {
     display: block;
     margin: 0 auto;
 }
-.hero .slider {
+.hero .heroBackground {
     width: 100%;
     height: 100%;
     background-image: url(../img/hero.jpg);
@@ -124,13 +143,13 @@ ul.navBar li.linkedin {
 .about {
     position: relative;
     display: block;
-    background: #ececec;
+    background: var(--lightGray);
     padding: 2px 0;
 }
 .image img {
     width: 250px;
-    transform: translateY(-70%);
-    border: 10px solid #ececec;
+    transform: translateY(-65%);
+    border: 10px solid var(--lightGray);
 }
 .image {
     height: 90px;
@@ -141,56 +160,65 @@ ul.navBar li.linkedin {
     font-weight: 700;
     padding: 10px 0 0 8px;
     line-height: 1.3;
-    color: #333333;
+    color: var(--darkGray);
 }
 .location {
-    color: #858585;
+    color: var(--subtitle);
+    font-family: 'Montserrat', sans-serif;
 }
 .aboutMe {
-    width: 100%;
+    min-width: 200px;
     padding: 25px;
     line-height: 1.5;
     font-weight: 800;
 }
-.aboutMe ul {
-    float: right;
-    margin:10px 0;
-}
 .aboutMe h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0px 0 10px 0;
-    color: #858585;
+    color: var(--subtitle);
+    letter-spacing: 2px;
 }
 .aboutMe p {
-    margin: 0;
+    margin-right: 100px;
     padding: 0;
     font-size: 1em;
-    color: #333333;
+    color: var(--darkGray);
+    font-family: 'Montserrat', sans-serif;
 }
-.aboutMe ul li {
-    list-style: initial;
-    font-size: 1.3em;
-    list-style: none;
-    color: #333333;
+.aboutMe span {
+    padding: 0;
+    font-size: 1em;
+    color: var(--darkGray);
+    font-family: 'Montserrat', sans-serif;
 }
 /*END ABOUT*/
 /*WORKS*/
 .portfolio {
     position: relative;
     display: block;
-    background: #ececec;
-    padding: 30px 0;
 }
-.box {
-    margin: 0 5px;
+.sliderSection {
+    padding: 0 25px;    
 }
-.box img {
-    max-width: 100%;
+.sliderSection h2 {
+    color: var(--subtitle);
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    margin: 0px 0 30px 0;
+}
+.slide {
+    margin: 0 20px 0 0;
+}
+.slide img {
+    max-width:100%;
 }
 /*END WORKS*/
 /*CONTACT*/
 .contact {
-    height: calc(100vh - 80px);
+    position: relative;
+    display: block;
+    background: var(--lightGray);
+    padding: 30px 0;
 }
 .footerText {
     display: block;
