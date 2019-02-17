@@ -8,6 +8,10 @@
     <link rel="icon" href="img/logo.png" sizes="16x16" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,20 +32,27 @@
                     <li>
                         <a href="#">WORKs</a>
                     </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li> 
                     <li class="linkedin">
-                        <a href="#">linkedIn</a>
+                        <a href="https://www.linkedin.com/in/nicola-mozzachiodi-151904116/">linkedIn</a>
                     </li>
                 </ul>
-                <div class="ham">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="hamburger">
+                    <span class="ham"></span>
+                    <span class="ham"></span>
+                    <span class="ham"></span>
                 </div>
             </div>
         </div>
     </header>
     <div class="hero">
-        <div class="slider">
+        <div class="heroBackground">
+                <div class="name">
+                    <h1>Nicola Mozzachiodi</h1>
+                    <span class="location">Arcola, La Spezia, Liguria, Italy</span>
+                </div>
             <div class="mouse"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVGhD7c/LCcJAFIXhgK5FrUGwDreCZbi2A2txbyci2IUtiJvEE7gHgpgQdR534HxwSTIzgfkrERERERFJpa7rDebQNM3EltzB/VaYI+64sKV+OHjDwdYJ4y4K91tj7u0F8dzbcj8c2mKe7Q/gKqobA1e8z2xrGA7uvEW9x2DmtjWOp6i/Y8hDVLAYyhkVPIZyREWLoZRR0WMoRVSyGIoZlTyGYkRli6GQUdljKESUmxj6J8pdDP0S5TaGvolyH0NjooqJoaGo4mLoU1SxMdSNwvNcdAx1o0y5MWRRD8yl+BhCzBIxU/sUEREREZECVdULTiz5dDwh70gAAAAASUVORK5CYII="></div>
         </div>
     </div>
@@ -59,24 +70,40 @@
         </div>
         <div class="wrapper container flex">
             <div class="aboutMe">
-                <h2>Chi sono</h2>
+                <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint quae sapiente ipsa quo, earum
                     aliquid, est beatae optio atque sed delectus. Voluptatem a cum quod accusantium excepturi? Minus,
                     vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam cum rem, sint nobis
                     officiis! Hic similique sit voluptatum amet.</p>
             </div>
             <div class="aboutMe">
-                <ul>
-                    <li><h2>Competenze</h2></li>
-                    <li>Frontend Developer</li>
-                    <li>Graphics Designer</li>
-                    <li>Web consulent</li>
-                </ul>
+                <h2>Skills</h2>
+                <span>Frontend Developer</span><br>
+                <span>Graphics Designer</span><br>
+                <span>Web consulent</span><br>
             </div>
         </div>
     </div>
     <div class="portfolio">
-        
+        <div class="wrapper">
+            <div class="sliderSection container">
+                <h2>Works</h2>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/hero.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/hero.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/hero.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/hero.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="contact">
@@ -89,6 +116,7 @@
             <span class="footerText">copyright Nicola Mozzachiodi</span>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/script.js"></script>
     </footer>
 </body>
