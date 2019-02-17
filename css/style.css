@@ -2,6 +2,7 @@
     --lightGray: #ececec; 
     --darkGray: #333333;
     --subtitle: #959eaf;
+    --bgMobileNav: rgba(149, 158, 175, 0.6);
 }
 body,html {
     font-family: 'Raleway', sans-serif;
@@ -17,7 +18,7 @@ body,html {
 }
 .mouse {
     position:absolute;
-    bottom:25vh;
+    bottom: 25vh;
     left: 50%;
     transform: translateX(-50%);
     z-index:1;
@@ -54,18 +55,21 @@ header {
     padding-top: 0px;
     z-index: 10;
 }
-div.logo img {
+.logo {
+    padding-left: 25px;
+}
+.logo img {
     max-width: 80px;
 }
 .navBar {
     line-height: 80px;
     height: 50px;
-    margin-right: -35px;
+    padding-right: 25px;
 }
 ul.navBar li{
     display: inline;
     line-height: 50px;
-    margin-left:35px;
+    margin-left: 35px;
 }
 ul.navBar li a {
     text-decoration: none;
@@ -74,10 +78,11 @@ ul.navBar li a {
     letter-spacing: 2px;
 }
 .hamburger {
-    display: block;
+    display: none;
     width: 40px;
-    padding: 25px;
+    padding: 25px 25px;
     height: 40px;
+    cursor: pointer;
 }
 .ham {
     width: 30px;
@@ -107,13 +112,14 @@ ul.navBar li a {
     height: auto;
     transform: translateX(0);
 }
-ul.navBar li.linkedin {
-    margin-left: 65px;
-}
-.linkedin a {
+ul.navBar li.linkedin a {
     border: 1px solid white;
     border-radius: 3px;
     padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+ul.navBar li.linkedin {
+    margin-left: 65px;
 }
 .linkedin a:hover {
     color: var(--darkGray);
@@ -153,6 +159,7 @@ ul.navBar li.linkedin {
 }
 .image {
     height: 90px;
+    padding-left: 15px;
 }
 .name {
     width: 100%;
@@ -168,7 +175,7 @@ ul.navBar li.linkedin {
 }
 .aboutMe {
     min-width: 200px;
-    padding: 25px;
+    padding: 20px 25px;
     line-height: 1.5;
     font-weight: 800;
 }
@@ -237,5 +244,51 @@ ul.navBar li.linkedin {
     }
     100% {
         transform: translateY(-20%);
+    }
+}
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 10;
+    }
+    .navigation {
+        padding-top: 20px;
+    }
+    .navBar {
+        display: none;
+        padding: 50% 0;
+        position: fixed;
+        top: 75%;
+        width: 100%;
+        height: 100vh;
+        font-size: 2.1em;
+        line-height: 60px;
+        background: var(--bgMobileNav);
+        transform: translatey(-50%);
+        text-align: center;
+    }
+    .ham {
+        transition: 0.6s;
+    }
+    ul.navBar li {
+        display: inherit;
+        line-height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+    ul.navBar li.linkedin {
+        margin: 0;
+        line-height: 100px;
+    }
+    .openNav {
+        display: block;
+    }
+    .navOpenLeft {
+        transform: rotate(45deg);
+        transition: 0.6s;
+    }
+    .navOpenRight {
+        transform: rotate(-45deg);
+        transition: 0.6s;
     }
 }
