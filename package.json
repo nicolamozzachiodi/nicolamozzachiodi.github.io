@@ -2,9 +2,10 @@
   "name": "nicolamozzachiodi.it",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "./gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
     "gulp": "^4.0.2"
   },
   "devDependencies": {
-    "gulp-watch": "^5.0.1"
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.12.0"
   }
 }
