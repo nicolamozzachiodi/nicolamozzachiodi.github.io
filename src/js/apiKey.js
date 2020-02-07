@@ -16,7 +16,7 @@ function getAllPost(getAllEntries) {
 }
 
 function getPost(id) {
-    
+
     client.getEntry(id + '')
         .then(function (entry) {
             let post = {
@@ -25,13 +25,7 @@ function getPost(id) {
                 description: entry.fields.description,
                 image: entry.fields.image.fields.file.url,
                 altImage: entry.fields.image.fields.file.fileName
-            }
-            document.cookie = 'post=; Path=/; Expires=xThu, 01 Jan 1970 00:00:01 GMT;';
-
-            document.cookie = "post=" + JSON.stringify(post);
-
-            
-        location.replace(window.location + "pages/post");
+            };
         });
 }
 
