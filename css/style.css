@@ -102,6 +102,7 @@ span {
 .grid-item {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .passion img {
@@ -119,4 +120,55 @@ span {
 
 .passions a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 30px 12px;
+    }
+
+    .black-container .flex-container {
+        display: block;
+        text-align: center;
+    }
+
+    .info.flex-container {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills {
+        order: 0;
+    }
+
+    .experience {
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .skills,
+    .experience {
+        width: 100%;
+    }
+
+    .passions {
+        padding-top: 0;
+    }
+
+    .passions .wrapper.flex-container {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .skills ul {
+        margin-bottom: 10px;
+    }
+
+    .skills ul li {
+        margin-bottom: 10px;
+    }
 }
