@@ -1,11 +1,18 @@
 .title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     margin: 10px auto;
     font-weight: 700;
 }
+h2,
+.h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 
-.sub-title {
+.h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -16,11 +23,11 @@
     margin-bottom: 20px;
 }
 
-h3,
-.h3 {
+h4,
+.h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     display: block;
 }
 
@@ -81,4 +88,35 @@ span {
 
 .experience-description {
     margin-left: 15px;
+}
+
+.experience-description span:not(.h4) {
+    font-size: 14px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 40%;
+}
+.grid-item {
+    display: flex;
+    align-items: center;
+}
+
+.passion img {
+    margin-right: 20px;
+}
+
+.passions .wrapper.flex-container {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.passions h2 {
+    margin-bottom: 0;
+} 
+
+.passions a {
+    text-decoration: none;
 }
