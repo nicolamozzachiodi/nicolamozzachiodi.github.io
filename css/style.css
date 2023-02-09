@@ -4,6 +4,11 @@
     margin: 10px auto;
     font-weight: 700;
 }
+
+.profile-photo {
+    width: 200px;
+}
+
 h2,
 .h2 {
     font-family: 'Montserrat', sans-serif;
@@ -121,10 +126,6 @@ span {
     justify-content: space-between;
     align-items: flex-end;
 }
-
-.passions h2 {
-    margin-bottom: 0;
-} 
 
 .passions a {
     text-decoration: none;
