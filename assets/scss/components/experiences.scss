@@ -1,0 +1,32 @@
+
+.experiences {
+	order: 1;
+	margin-top: 30px;
+	width: 100%;
+
+	@media screen and (min-width: 1024px) {
+		width: 40%;
+		margin-top: 0;
+	}
+
+	.flex-container {
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	.experience-description {
+		margin-left: 15px;
+		
+		span {
+			&:not(.h4) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	img {
+		width: 100px;
+		height: 100px;
+		box-shadow: 0px 0px 15px 7px rgba(107,107,107,0.43);
+	}
+}
