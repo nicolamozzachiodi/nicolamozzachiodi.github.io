@@ -1,8 +1,5 @@
 # node.js
 node_modules
 
-# Assets
-assets/css/**
-
 # VS Code
 .vscode
