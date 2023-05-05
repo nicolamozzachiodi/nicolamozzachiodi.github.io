@@ -1,32 +1,17 @@
 name: CI
 
-on: 
-  push:
-    branches:    
-      - master 
+on: [push]
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
     
-    strategy:
-      matrix:
-        node-version: [10.x, 8.x]
-    
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js 18
-      uses: actions/setup-node@v1
-      with:
-        node-version: 18.0.0
-    
-    - name: npm install
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
       run: |
-        npm install
-      env:
-        CI: true
-      
-    - name: sass run
-      run: |
-        npm run sass-prod
+        echo Add other actions to build,
+        echo test, and deploy your project.
