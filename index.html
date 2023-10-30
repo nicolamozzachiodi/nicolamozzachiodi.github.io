@@ -17,12 +17,17 @@
 </head>
 
 <body>
-    <div class="black-container header">
-        <div class="container flex-container">
+    <div class="header flex-container">
+        <div class="video-background">
+            <div class="layer"></div>
+            <video autoplay muted loop src="img/bg-video.mp4" id="bg-video" title="front-end-development"></video>
+        </div>
+        <div class="content-header flex-container">
+            
             <div class="image">
                 <img src="img/NicolaMozzachiodi.png" alt="NicolaMozzachiodi" class="border-rnd-20 profile-photo">
             </div>
-            <div class="description">
+            <div class="description black-container">
                 <h1 class="title">
                     Nicola Mozzachiodi
                 </h1>
@@ -179,6 +184,11 @@
             <span class="h2">Contact me on <a href="https://www.linkedin.com/in/nicolamozzachiodi/" title="follow me on linkedin">LinkedIn</a></span>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

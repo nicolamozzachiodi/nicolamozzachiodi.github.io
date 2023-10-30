@@ -66,29 +66,96 @@ span {
   color: #c3c3c3;
 }
 
-.header .flex-container {
-  display: block;
-  text-align: center;
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 1024px) {
-  .header .flex-container {
-    align-items: center;
-    display: flex;
-    text-align: left;
+  .header {
+    overflow: hidden;
   }
 }
-.header .title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 26px;
-  margin: 10px auto;
-  font-weight: 700;
+.header .video-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.header .video-background .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+.header .video-background #bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: auto;
+  z-index: 0;
+}
+@media screen and (min-width: 1024px) {
+  .header .video-background #bg-video {
+    width: 100vw;
+    height: auto;
+  }
+}
+.header .content-header {
+  transform: translateY(20px);
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .header .content-header {
+    flex-direction: row;
+  }
 }
 .header .profile-photo {
   width: 200px;
-  height: 223px;
+}
+@media screen and (min-width: 1024px) {
+  .header .profile-photo {
+    width: 350px;
+  }
 }
 .header .description {
-  margin-left: 20px;
+  border-radius: 20px;
+  width: 90vw;
+  z-index: -1;
+  margin-top: -55px;
+  padding: 90px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .header .description {
+    height: 70vh;
+    width: 60vw;
+    margin-left: -150px;
+    padding: 150px 150px 150px 300px;
+  }
+}
+.header .description .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin: 10px 0;
+  font-weight: 700;
 }
 .header .description h3 {
   margin-bottom: 20px;
